@@ -49,7 +49,6 @@ public class Dayadapter extends RecyclerView.Adapter<Dayadapter.DayViewHoler> {
             }
             holder.imgDay.setImageResource(day.getImg());
             holder.tvDay.setText(day.getName());
-
     }
 
     @Override

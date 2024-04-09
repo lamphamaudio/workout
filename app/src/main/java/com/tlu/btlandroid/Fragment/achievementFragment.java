@@ -14,7 +14,6 @@ import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -28,7 +27,7 @@ import java.util.List;
 import adapter.MuscleAdapter;
 import untity.Muscle;
 
-public class achievementFragment extends Fragment {
+public class achievementFragment extends Fragment{
 
     private View mView;
     private RecyclerView rcv_muscle;
@@ -97,6 +96,7 @@ public class achievementFragment extends Fragment {
 
     private void initUi() {
         rcv_muscle = mView.findViewById(R.id.rcv_muscle);
+        Context context = requireActivity().getApplicationContext();
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
         rcv_muscle.setLayoutManager(linearLayoutManager);
         DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(getContext(),DividerItemDecoration.VERTICAL);
@@ -105,4 +105,5 @@ public class achievementFragment extends Fragment {
         mMuscleAdapter = new MuscleAdapter(mListMuscle);
         rcv_muscle.setAdapter(mMuscleAdapter);
     }
+
 }

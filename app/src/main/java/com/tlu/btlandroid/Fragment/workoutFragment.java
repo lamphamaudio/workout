@@ -51,7 +51,7 @@ public class workoutFragment extends Fragment {
         rcv.setAdapter(dayadapter);
 
 
-        String[] dayNames = {"Chủ nhật", "Thứ Hai", "Thứ Ba", "Thứ Tư", "Thứ Năm", "Thứ Sáu", "Thứ Bảy"};
+        String[] dayNames = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
         String dayName = dayNames[calendar.get(Calendar.DAY_OF_WEEK) - 1];
 
 //        rcv.addOnScrollListener(new RecyclerView.OnScrollListener() {
@@ -72,13 +72,13 @@ public class workoutFragment extends Fragment {
 
     private List<day> getListDay() {
         List<day>list = new ArrayList<>();
-        list.add(new day(R.drawable.thu2,"THỨ HAI"));
-        list.add(new day(R.drawable.thu3,"THỨ BA"));
-        list.add(new day(R.drawable.thu4,"THỨ TƯ"));
-        list.add(new day(R.drawable.thu5,"THỨ NĂM"));
-        list.add(new day(R.drawable.thu6,"THỨ SÁU"));
-        list.add(new day(R.drawable.thu7,"THỨ BẨY"));
-        list.add(new day(R.drawable.chunhat,"CHỦ NHẬT"));
+        list.add(new day(R.drawable.thu2,"Monday"));
+        list.add(new day(R.drawable.thu3,"Tuesday"));
+        list.add(new day(R.drawable.thu4,"Wednesday"));
+        list.add(new day(R.drawable.thu5,"Thursday"));
+        list.add(new day(R.drawable.thu6,"Friday"));
+        list.add(new day(R.drawable.thu7,"Saturday"));
+        list.add(new day(R.drawable.chunhat,"Sunday"));
         return list;
     }
 }

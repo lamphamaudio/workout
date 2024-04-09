@@ -19,7 +19,7 @@
             android:layout_width="wrap_content"
             android:layout_height="65dp"
             android:layout_weight="0.8"
-            android:text="Trang chủ"
+            android:text="Home"
             android:textColor="@color/white"
             android:gravity="left|center_vertical"
             android:textSize="23dp"/>
@@ -33,14 +33,13 @@
             >
         </Button>
 
-
     </LinearLayout>
 
     <TextView
         android:id="@+id/tv2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hàng ngày"
+        android:text="DAILY"
         android:textColor="@color/white"
         android:textSize="20dp"
         android:paddingTop="15dp"
@@ -56,7 +55,7 @@
         android:id="@+id/tv3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Thói quen tập luyện hàng ngày"
+        android:text="Daily workout routines"
         android:textColor="@color/white"
         android:textSize="18dp"
         android:paddingTop="5dp"
