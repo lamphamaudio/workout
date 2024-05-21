@@ -26,10 +26,10 @@
             android:text="Cơ bụng"
             android:textSize="22dp"
             android:textStyle="bold"
-            android:paddingLeft="20dp"
+            android:textColor="@color/white"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toRightOf="@+id/img1" />
+            android:layout_toRightOf="@+id/img1"/>
 
         <TextView
             android:id="@+id/muslce_number1"

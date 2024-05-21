@@ -14,7 +14,6 @@ public class Activity_detail extends AppCompatActivity {
     TextView infoMuscle;
     ImageView imageViewMuscle;
     Button back;
-//    private int[] imageIds = {R.drawable.human_background, R.drawable.arms, R.drawable.backmuscle, R.drawable.buttocks, R.drawable.chest, R.drawable.hips, R.drawable.legs, R.drawable.shoulders};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
